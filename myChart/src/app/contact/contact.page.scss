@@ -1,0 +1,38 @@
+ion-header {
+  background: #3880ff;
+  ion-toolbar {
+    background: #3880ff;
+    padding: 0;
+    ion-title {
+      color: #fff;
+      background: #3880ff;
+    }
+  }
+}
+
+ion-content {
+  ion-list {
+    ion-item-divider {
+      ion-label {
+        margin: 0;
+        text-align: left;
+        font-size: 12px;
+      }
+    }
+    ion-item {
+      ion-avatar {
+        --border-radius: 0;
+      }
+    }
+  }
+  .search {
+    position: relative;
+    .mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+}

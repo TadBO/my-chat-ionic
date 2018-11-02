@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>消息</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content style="padding: 5px">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                refreshingSpinner="circles"
+                refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <div class="search" (click)="navigatorToSearch()">
+        <ion-searchbar mode="ios"></ion-searchbar>
+        <div class="mask"></div>
+    </div>
+    <ion-list routerLink="/message/123">
+        <ion-item>
+            <ion-avatar slot="start">
+                <img src="http://img.zcool.cn/community/01786557e4a6fa0000018c1bf080ca.png"/>
+            </ion-avatar>
+            <ion-label>
+                <h2>Finn</h2>
+                <p>Listen, I've had a pretty messed up day...</p>
+                <p class="time">15:32</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-list routerLink="/message/123">
+        <ion-item>
+            <ion-avatar slot="start">
+                <img src="http://img.zcool.cn/community/01786557e4a6fa0000018c1bf080ca.png"/>
+            </ion-avatar>
+            <ion-label>
+                <h2>Finn</h2>
+                <p>Listen, I've had a pretty messed up day...</p>
+                <p class="time">15:32</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
